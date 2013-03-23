@@ -13,6 +13,7 @@ Bootstrap customization best practices: http://stackoverflow.com/questions/10451
  */
 
 // Core variables and mixins
+@import "../bootstrap/less/variables";
 @import "variables"; // Modify this for custom colors, font-sizes, etc
 @import "../bootstrap/less/mixins";
 @import "mixins";
@@ -27,6 +28,7 @@ Bootstrap customization best practices: http://stackoverflow.com/questions/10451
 
 // Base CSS
 @import "../bootstrap/less/type";
+@import "type";
 @import "../bootstrap/less/code";
 @import "../bootstrap/less/forms";
 @import "../bootstrap/less/tables";
@@ -66,6 +68,7 @@ Bootstrap customization best practices: http://stackoverflow.com/questions/10451
 @import "../bootstrap/less/progress-bars";
 @import "../bootstrap/less/accordion";
 @import "../bootstrap/less/carousel";
+@import "carousel";
 @import "../bootstrap/less/hero-unit";
 
 // Utility classes
@@ -94,4 +97,5 @@ Bootstrap customization best practices: http://stackoverflow.com/questions/10451
 // From 979px and below, show a button to toggle navbar contents
 @import "../bootstrap/less/responsive-navbar";
 
+@import "responsive";
 @import "reset";
