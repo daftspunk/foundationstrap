@@ -3316,17 +3316,11 @@ input[type="submit"].btn.btn-mini {
   -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
 }
-.btn-primary {
-  border-bottom: 1px solid #004466;
+.btn {
+  background-image: none;
   -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset,0 0 1px rgba(0,0,0,0.1);
   -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset,0 0 1px rgba(0,0,0,0.1);
   box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset,0 0 1px rgba(0,0,0,0.1);
-}
-.btn {
-  background-image: none;
-}
-.btn-primary {
-  background-image: none;
 }
 .alert {
   padding: 8px 35px 8px 14px;
