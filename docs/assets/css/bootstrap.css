@@ -5315,10 +5315,6 @@ a.badge:focus {
   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5);
   font-weight: normal;
 }
-.label:hover,
-.badge:hover {
-  text-decoration: none;
-}
 .label-important,
 .badge-important {
   background-color: #c2c60c;
@@ -5436,9 +5432,6 @@ a.badge:focus {
 }
 .ring-badge-inverse[href] {
   background-color: #1a1a1a;
-}
-.ring-badge:hover {
-  text-decoration: none;
 }
 .ring-badge-important {
   background-color: #c2c60c;
@@ -5913,6 +5906,14 @@ a.badge:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+ul.list-square,
+ul.list-circle,
+ul.list-disc {
+  margin-left: 17px;
+}
+ul.list-square {
+  list-style-type: square;
 }
 .pull-right {
   float: right;
@@ -7107,4 +7108,8 @@ a.badge:focus {
   .footer p {
     margin-bottom: 9px;
   }
+}
+ul,
+ol {
+  margin: 0;
 }
