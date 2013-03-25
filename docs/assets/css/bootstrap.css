@@ -4397,10 +4397,14 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a {
   color: #fff;
 }
+.navbar .divider-vertical {
+  margin: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #fff;
+}
 .navbar-inverse .divider-vertical {
   border-left-color: #333;
   border-right-color: #555;
-  margin: 0;
 }
 .breadcrumb {
   padding: 8px 15px;
