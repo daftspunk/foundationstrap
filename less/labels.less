@@ -1,6 +1,10 @@
 // Extra labels
 //
 
+.label, .badge {
+	.border-radius(0);
+}
+
 @ringBadgeBorder: 2px;
 @ringBadgeSize: 40px;
 @ringBadgeIconSize: 32px;
@@ -36,6 +40,15 @@
 // Only give color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
 .label,
 .badge {
+	background-color: #e9e9e9;
+	color: #505050;
+	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5);
+	font-weight: normal;
+
+	&:hover {
+		text-decoration: none;
+	}
+
 	// Important (red)
 	&-important { 
 		background-color: @importantBackground;

@@ -1,25 +1,29 @@
-.carousel { 
-    position: relative;
-    li { margin-right: 5px; }
+.carousel-control {
+	.border-radius(0);
+}
 
-    .carousel-control {
-        border: none;
-        position: absolute;
-        top: auto;        
-        left: auto;
-        bottom: 30px;
-        width: 26px;
-        height: 26px;
-        margin: 0;
-        &.post { top: 50%; }
-        &.left.post { left: 0; }
-        &.left {
-            right: 39px;
-            background-color: rgba(54, 55, 56, 0.7);
-        }
-        &.right {
-            right: 9px;
-            background-color: rgba(54, 55, 56, 0.7);
-        }
-    }
+.carousel { 
+	position: relative;
+	li { margin-right: 5px; }
+
+	.carousel-control {
+		border: none;
+		position: absolute;
+		top: auto;        
+		left: auto;
+		bottom: 30px;
+		width: 26px;
+		height: 26px;
+		margin: 0;
+		&.post { top: 50%; }
+		&.left.post { left: 0; }
+		&.left {
+			right: 39px;
+			background-color: rgba(54, 55, 56, 0.7);
+		}
+		&.right {
+			right: 9px;
+			background-color: rgba(54, 55, 56, 0.7);
+		}
+	}
 }
