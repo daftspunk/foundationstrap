@@ -10,68 +10,60 @@
 .label,
 .badge {
 	background-color: #e9e9e9;
-	color: #505050;
+	color: @white;
 	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5);
 	font-weight: normal;
 
+	&[href] { color: darken(@white, 10%); }
+	
 	&:hover {
 	}
 
 	// Important (red)
 	&-important { 
 		background-color: @importantBackground;
-		color: @importantText; 
 		border-color: darken(@importantBackground, 10%); 
 	}
 
 	&-important[href] { 
 		background-color: darken(@importantBackground, 10%);
-		color: darken(@importantText, 10%); 
 		border-color: darken(@importantBackground, 20%); 
 	}
 	// Warnings (orange)
 	&-warning { 
 		background-color: @errorBackground;
-		color: @errorText; 
 		border-color: darken(@errorBackground, 10%); 
 	}
 	&-warning[href] { 
 		background-color: darken(@errorBackground, 10%);
-		color: darken(@errorText, 10%); 
 		border-color: darken(@errorBackground, 20%); 
 	}
 	// Success (green)
 	&-success { 
 		background-color: @successBackground;
-		color: @successText; 
 		border-color: darken(@successBackground, 10%); 
 	}
 	&-success[href] { 
 		background-color: darken(@successBackground, 10%);
-		color: darken(@successText, 10%); 
 		border-color: darken(@successBackground, 20%); 
 	}
 	// Info (turquoise)
 	&-info { 
 		background-color: @infoBackground;
-		color: @infoText; 
 		border-color: darken(@infoBackground, 10%); 
 	}
 	&-info[href] { 
 		background-color: darken(@infoBackground, 10%);
-		color: darken(@infoText, 10%); 
 		border-color: darken(@infoBackground, 20%); 
 	}
 	// Inverse (black)
 	&-inverse { 
 		background-color: @inverseBackground;
-		color: @inverseText; 
 		border-color: darken(@inverseBackground, 10%); 
 		text-shadow: 0 0 1px #fff;
 	}
 	&-inverse[href] { 
 		background-color: darken(@inverseBackground, 10%);
-		color: darken(@inverseText, 10%); 
 		border-color: darken(@inverseBackground, 20%); 
 	}
 }
