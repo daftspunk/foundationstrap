@@ -5115,45 +5115,170 @@ a.badge:focus {
 .ring-badge i.offset {
   width: 32px;
 }
-.ring-badge-important {
+.label-important,
+.badge-important {
+  background-color: #c2c60c;
   color: #ffffff;
-  border-color: #ffffff;
+  border-color: #939609;
+}
+.label-important[href],
+.badge-important[href] {
+  background-color: #939609;
+  color: #e6e6e6;
+  border-color: #646606;
+}
+.label-warning,
+.badge-warning {
+  background-color: #c60f13;
+  color: #ffffff;
+  border-color: #970b0e;
+}
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #970b0e;
+  color: #e6e6e6;
+  border-color: #67080a;
+}
+.label-success,
+.badge-success {
+  background-color: #6ec229;
+  color: #ffffff;
+  border-color: #569820;
+}
+.label-success[href],
+.badge-success[href] {
+  background-color: #569820;
+  color: #e6e6e6;
+  border-color: #3e6e17;
+}
+.label-info,
+.badge-info {
+  background-color: #c2c60c;
+  color: #ffffff;
+  border-color: #939609;
+}
+.label-info[href],
+.badge-info[href] {
+  background-color: #939609;
+  color: #e6e6e6;
+  border-color: #646606;
+}
+.label-inverse,
+.badge-inverse {
+  background-color: #cccccc;
+  color: #000000;
+  border-color: #b3b3b3;
+  text-shadow: 0 0 1px #fff;
+}
+.label-inverse[href],
+.badge-inverse[href] {
+  background-color: #b3b3b3;
+  color: #000000;
+  border-color: #999999;
+}
+.ring-badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #999999;
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.ring-badge:empty {
+  display: none;
+}
+.ring-badge-important {
+  background-color: #ffffff;
 }
 .ring-badge-important[href] {
-  color: #e6e6e6;
-  border-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 .ring-badge-warning {
-  color: #f09609;
-  border-color: #f09609;
+  background-color: #f09609;
 }
 .ring-badge-warning[href] {
-  color: #bf7707;
-  border-color: #bf7707;
+  background-color: #bf7707;
 }
 .ring-badge-success {
-  color: #ffffff;
-  border-color: #ffffff;
+  background-color: #ffffff;
 }
 .ring-badge-success[href] {
-  color: #e6e6e6;
-  border-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 .ring-badge-info {
-  color: #ffffff;
-  border-color: #ffffff;
+  background-color: #ffffff;
 }
 .ring-badge-info[href] {
-  color: #e6e6e6;
-  border-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 .ring-badge-inverse {
-  color: #333333;
-  border-color: #333333;
+  background-color: #333333;
 }
 .ring-badge-inverse[href] {
-  color: #1a1a1a;
-  border-color: #1a1a1a;
+  background-color: #1a1a1a;
+}
+.ring-badge-important {
+  background-color: #c2c60c;
+  color: #ffffff;
+  border-color: #939609;
+}
+.ring-badge-important[href] {
+  background-color: #939609;
+  color: #e6e6e6;
+  border-color: #646606;
+}
+.ring-badge-warning {
+  background-color: #c60f13;
+  color: #ffffff;
+  border-color: #970b0e;
+}
+.ring-badge-warning[href] {
+  background-color: #970b0e;
+  color: #e6e6e6;
+  border-color: #67080a;
+}
+.ring-badge-success {
+  background-color: #6ec229;
+  color: #ffffff;
+  border-color: #569820;
+}
+.ring-badge-success[href] {
+  background-color: #569820;
+  color: #e6e6e6;
+  border-color: #3e6e17;
+}
+.ring-badge-info {
+  background-color: #c2c60c;
+  color: #ffffff;
+  border-color: #939609;
+}
+.ring-badge-info[href] {
+  background-color: #939609;
+  color: #e6e6e6;
+  border-color: #646606;
+}
+.ring-badge-inverse {
+  background-color: #cccccc;
+  color: #000000;
+  border-color: #b3b3b3;
+  text-shadow: 0 0 1px #fff;
+}
+.ring-badge-inverse[href] {
+  background-color: #b3b3b3;
+  color: #000000;
+  border-color: #999999;
 }
 .label-medium {
   padding: 6px 13px;

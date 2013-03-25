@@ -34,22 +34,69 @@
 
 // Colors
 // Only give color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
-.ring-badge {
+.label,
+.badge {
 	// Important (red)
-	&-important         { color: @errorText; border-color: @errorText; }
-	&-important[href]   { color: darken(@errorText, 10%); border-color: darken(@errorText, 10%); }
+	&-important { 
+		background-color: @importantBackground;
+		color: @importantText; 
+		border-color: darken(@importantBackground, 10%); 
+	}
+
+	&-important[href] { 
+		background-color: darken(@importantBackground, 10%);
+		color: darken(@importantText, 10%); 
+		border-color: darken(@importantBackground, 20%); 
+	}
 	// Warnings (orange)
-	&-warning           { color: @orange; border-color: @orange; }
-	&-warning[href]     { color: darken(@orange, 10%); border-color: darken(@orange, 10%); }
+	&-warning { 
+		background-color: @errorBackground;
+		color: @errorText; 
+		border-color: darken(@errorBackground, 10%); 
+	}
+	&-warning[href] { 
+		background-color: darken(@errorBackground, 10%);
+		color: darken(@errorText, 10%); 
+		border-color: darken(@errorBackground, 20%); 
+	}
 	// Success (green)
-	&-success           { color: @successText; border-color: @successText; }
-	&-success[href]     { color: darken(@successText, 10%); border-color: darken(@successText, 10%); }
+	&-success { 
+		background-color: @successBackground;
+		color: @successText; 
+		border-color: darken(@successBackground, 10%); 
+	}
+	&-success[href] { 
+		background-color: darken(@successBackground, 10%);
+		color: darken(@successText, 10%); 
+		border-color: darken(@successBackground, 20%); 
+	}
 	// Info (turquoise)
-	&-info              { color: @infoText; border-color: @infoText; }
-	&-info[href]        { color: darken(@infoText, 10%); border-color: darken(@infoText, 10%); }
+	&-info { 
+		background-color: @infoBackground;
+		color: @infoText; 
+		border-color: darken(@infoBackground, 10%); 
+	}
+	&-info[href] { 
+		background-color: darken(@infoBackground, 10%);
+		color: darken(@infoText, 10%); 
+		border-color: darken(@infoBackground, 20%); 
+	}
 	// Inverse (black)
-	&-inverse           { color: @grayDark; border-color: @grayDark; }
-	&-inverse[href]     { color: darken(@grayDark, 10%); border-color: darken(@grayDark, 10%); }
+	&-inverse { 
+		background-color: @inverseBackground;
+		color: @inverseText; 
+		border-color: darken(@inverseBackground, 10%); 
+		text-shadow: 0 0 1px #fff;
+	}
+	&-inverse[href] { 
+		background-color: darken(@inverseBackground, 10%);
+		color: darken(@inverseText, 10%); 
+		border-color: darken(@inverseBackground, 20%); 
+	}
+}
+
+.ring-badge {
+	.badge;
 }
 
 .label-medium {
