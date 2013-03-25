@@ -1,7 +1,10 @@
 // Customise buttons
 //
 
-.btn {
+.btn,
+.btn-group.open .dropdown-toggle,
+.btn-group > .btn + .dropdown-toggle,
+.btn-group.open .btn.dropdown-toggle {
 	.no-background-image();
 	.box-shadow(~"0 -2px 0 rgba(0,0,0,0.2) inset,0 0 1px rgba(0,0,0,0.1)");
 }
