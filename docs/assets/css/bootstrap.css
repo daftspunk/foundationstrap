@@ -1,14 +1,14 @@
-/*
-Bootstrap customization best practices: http://stackoverflow.com/questions/10451317/twitter-bootstrap-customization-best-practices
-*/
 /*!
- * Foundationstrap v0.0.1
+ * Foundationstrap v1.0.0
  *
- * Copyright 2012 Responsiv, Inc
+ * Copyright 2013 Responsiv, Inc.
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with love.
+ *
+ * References: 
+ *   Bootstrap customization best practices - http://stackoverflow.com/questions/10451317/twitter-bootstrap-customization-best-practices
  */
 .clearfix {
   *zoom: 1;
@@ -3784,9 +3784,6 @@ input[type="submit"].btn.btn-mini {
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
-}
-.nav-list > li > a > i {
-  float: right;
 }
 .nav-list > li:first-child > a {
   -webkit-border-radius: 0;

@@ -1,15 +1,14 @@
-/*
-Bootstrap customization best practices: http://stackoverflow.com/questions/10451317/twitter-bootstrap-customization-best-practices
-*/
-
 /*!
- * Foundationstrap v0.0.1
+ * Foundationstrap v1.0.0
  *
- * Copyright 2012 Responsiv, Inc
+ * Copyright 2013 Responsiv, Inc.
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with love.
+ *
+ * References: 
+ *   Bootstrap customization best practices - http://stackoverflow.com/questions/10451317/twitter-bootstrap-customization-best-practices
  */
 
 // Core variables and mixins
@@ -76,11 +75,14 @@ Bootstrap customization best practices: http://stackoverflow.com/questions/10451
 @import "carousel";
 @import "../bootstrap/less/hero-unit";
 
-// Utility classes
+// UTILITY CLASSES
+// ------------------
+
 @import "../bootstrap/less/utilities"; // Has to be last to override when necessary
 
 // RESPONSIVE CLASSES
 // ------------------
+
 @import "../bootstrap/less/responsive-utilities";
 
 // MEDIA QUERIES
@@ -103,4 +105,8 @@ Bootstrap customization best practices: http://stackoverflow.com/questions/10451
 @import "../bootstrap/less/responsive-navbar";
 
 @import "responsive";
+
+// RESET (UN-FLUFFIFY BOOTSTRAP)
+// ------------------
+
 @import "reset";

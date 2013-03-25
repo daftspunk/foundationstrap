@@ -778,6 +778,10 @@ form.bs-docs-example {
 
 /* Sidenav for Docs
 -------------------------------------------------- */
+      
+.bs-docs-sidenav > li > a > i {
+  float: right;
+}
 
 .bs-docs-sidenav.affix {
   top: 40px;
