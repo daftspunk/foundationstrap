@@ -6,48 +6,62 @@
 @ringBadgeIconSize: 32px;
 
 .ring-badge {
-   padding: 0;
-   display: inline-block;
-   .border-radius(999px);
-   width: @ringBadgeSize;
-   height: @ringBadgeSize;
-   line-height: @ringBadgeSize;
-   text-align: center;
-   vertical-align: middle;
-   position: relative;
-   border: @ringBadgeBorder solid @grayDark;
-   color: @grayDark;
-   font-size: 20px;
-   font-weight: bold;
-   i { 
-      font-size: @ringBadgeIconSize; 
-      position: absolute;
-      width: @ringBadgeSize;
-      left: 0;  
-      top: @ringBadgeBorder;
-      line-height: @ringBadgeSize;
+	padding: 0;
+	display: inline-block;
+	.border-radius(999px);
+	width: @ringBadgeSize;
+	height: @ringBadgeSize;
+	line-height: @ringBadgeSize;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	border: @ringBadgeBorder solid @grayDark;
+	color: @grayDark;
+	font-size: 20px;
+	font-weight: bold;
+	i { 
+		font-size: @ringBadgeIconSize; 
+		position: absolute;
+		width: @ringBadgeSize;
+		left: 0;  
+		top: @ringBadgeBorder;
+		line-height: @ringBadgeSize;
 
-      // Some icons dont align centered, so use offset
-      &.offset { width: @ringBadgeIconSize; }
-   }
+		// Some icons dont align centered, so use offset
+		&.offset { width: @ringBadgeIconSize; }
+	}
 }
 
 // Colors
 // Only give color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
 .ring-badge {
-  // Important (red)
-  &-important         { color: @errorText; border-color: @errorText; }
-  &-important[href]   { color: darken(@errorText, 10%); border-color: darken(@errorText, 10%); }
-  // Warnings (orange)
-  &-warning           { color: @orange; border-color: @orange; }
-  &-warning[href]     { color: darken(@orange, 10%); border-color: darken(@orange, 10%); }
-  // Success (green)
-  &-success           { color: @successText; border-color: @successText; }
-  &-success[href]     { color: darken(@successText, 10%); border-color: darken(@successText, 10%); }
-  // Info (turquoise)
-  &-info              { color: @infoText; border-color: @infoText; }
-  &-info[href]        { color: darken(@infoText, 10%); border-color: darken(@infoText, 10%); }
-  // Inverse (black)
-  &-inverse           { color: @grayDark; border-color: @grayDark; }
-  &-inverse[href]     { color: darken(@grayDark, 10%); border-color: darken(@grayDark, 10%); }
+	// Important (red)
+	&-important         { color: @errorText; border-color: @errorText; }
+	&-important[href]   { color: darken(@errorText, 10%); border-color: darken(@errorText, 10%); }
+	// Warnings (orange)
+	&-warning           { color: @orange; border-color: @orange; }
+	&-warning[href]     { color: darken(@orange, 10%); border-color: darken(@orange, 10%); }
+	// Success (green)
+	&-success           { color: @successText; border-color: @successText; }
+	&-success[href]     { color: darken(@successText, 10%); border-color: darken(@successText, 10%); }
+	// Info (turquoise)
+	&-info              { color: @infoText; border-color: @infoText; }
+	&-info[href]        { color: darken(@infoText, 10%); border-color: darken(@infoText, 10%); }
+	// Inverse (black)
+	&-inverse           { color: @grayDark; border-color: @grayDark; }
+	&-inverse[href]     { color: darken(@grayDark, 10%); border-color: darken(@grayDark, 10%); }
+}
+
+.label-medium {
+	padding: 6px 13px;
+}
+
+.label-large {
+	padding: 4px 13px;
+	font-weight: normal;
+	font-size: 27px;
+}
+
+.label-round {
+	.border-radius(1000px);
 }
