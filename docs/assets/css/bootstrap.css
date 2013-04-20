@@ -832,6 +832,10 @@ h6 {
   font-family: 'Segoe UI', 'Ubuntu', sans-serif;
   font-weight: 300;
 }
+a,
+a:hover {
+  text-decoration: none;
+}
 code,
 pre {
   padding: 0 3px 2px;
@@ -3881,12 +3885,13 @@ input[type="submit"].btn.btn-mini {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.nav-tabs > li.active > a {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active:hover > a {
   border-top: 3px solid #488dc8;
 }
 .nav-tabs > li > a:hover {
   background: 0 none;
-  border: 0 none;
+  border: 1px solid transparent;
 }
 .nav-tabs.nav-stacked > li:first-child > a,
 .nav-tabs.nav-stacked > li:last-child > a {
@@ -4508,6 +4513,10 @@ input[type="submit"].btn.btn-mini {
   padding-left: 0;
   padding-right: 0;
 }
+.navbar .btn,
+.navbar .btn-group {
+  margin-top: 0;
+}
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
@@ -4916,6 +4925,9 @@ input[type="submit"].btn.btn-mini {
 }
 .modal form {
   margin-bottom: 0;
+}
+.modal .modal-body .close {
+  margin-top: -10px;
 }
 .tooltip {
   position: absolute;
@@ -5447,6 +5459,11 @@ a.badge:focus {
 .ring-badge-inverse[href] {
   color: #1a1a1a;
   border-color: #1a1a1a;
+}
+label.required:after {
+  content: ' *';
+  color: #3373A9;
+  font-weight: bold;
 }
 @-webkit-keyframes progress-bar-stripes {
   from {
