@@ -134,3 +134,9 @@
 	&-inverse { color: @grayDark; border-color: @grayDark; }
 	&-inverse[href] { color: darken(@grayDark, 10%); border-color: darken(@grayDark, 10%); }
 }
+
+label.required:after {
+	content: ' *';
+	color: #3373A9;
+	font-weight: bold;
+}
