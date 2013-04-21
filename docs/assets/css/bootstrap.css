@@ -4601,6 +4601,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  border: 1px solid #d4d4d4;
+  font-size: 12px;
+  padding: 6px 10px;
 }
 .pagination {
   margin: 20px 0;
