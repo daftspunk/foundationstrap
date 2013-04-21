@@ -3432,6 +3432,13 @@ input[type="submit"].btn.btn-mini {
   -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset,0 0 1px rgba(0,0,0,0.1);
   box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset,0 0 1px rgba(0,0,0,0.1);
 }
+.input-append .add-on:last-child,
+.input-append .btn:last-child,
+.input-append .btn-group:last-child > .dropdown-toggle {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
@@ -3885,13 +3892,18 @@ input[type="submit"].btn.btn-mini {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+.nav-tabs > li > a,
+.nav-tabs > li > a {
+  border-top: 3px solid transparent;
+}
 .nav-tabs > li.active > a,
 .nav-tabs > li.active:hover > a {
   border-top: 3px solid #488dc8;
 }
-.nav-tabs > li > a:hover {
-  background: 0 none;
-  border: 1px solid transparent;
+.nav-tabs.nav-stacked > li.active > a,
+.nav-tabs.nav-stacked > li.active:hover > a {
+  border-top: 1px solid #ddd;
+  border-left: 3px solid #488dc8;
 }
 .nav-tabs.nav-stacked > li:first-child > a,
 .nav-tabs.nav-stacked > li:last-child > a {
@@ -4604,6 +4616,12 @@ input[type="submit"].btn.btn-mini {
   border: 1px solid #d4d4d4;
   font-size: 12px;
   padding: 6px 10px;
+}
+.breadcrumb > li {
+  margin: 0 0 0 5px;
+}
+.breadcrumb > li > .divider {
+  padding: 0 0 0 5px;
 }
 .pagination {
   margin: 20px 0;
@@ -5333,52 +5351,62 @@ a.badge:focus {
 }
 .label-important,
 .badge-important {
+  color: #fff;
   background-color: #c2c60c;
   border-color: #939609;
 }
 .label-important[href],
 .badge-important[href] {
+  color: #fff;
   background-color: #939609;
   border-color: #646606;
 }
 .label-warning,
 .badge-warning {
+  color: #fff;
   background-color: #c60f13;
   border-color: #970b0e;
 }
 .label-warning[href],
 .badge-warning[href] {
+  color: #fff;
   background-color: #970b0e;
   border-color: #67080a;
 }
 .label-success,
 .badge-success {
+  color: #fff;
   background-color: #6ec229;
   border-color: #569820;
 }
 .label-success[href],
 .badge-success[href] {
+  color: #fff;
   background-color: #569820;
   border-color: #3e6e17;
 }
 .label-info,
 .badge-info {
+  color: #fff;
   background-color: #c2c60c;
   border-color: #939609;
 }
 .label-info[href],
 .badge-info[href] {
+  color: #fff;
   background-color: #939609;
   border-color: #646606;
 }
 .label-inverse,
 .badge-inverse {
+  color: #fff;
   background-color: #cccccc;
   border-color: #b3b3b3;
   text-shadow: 0 0 1px #fff;
 }
 .label-inverse[href],
 .badge-inverse[href] {
+  color: #fff;
   background-color: #b3b3b3;
   border-color: #999999;
 }

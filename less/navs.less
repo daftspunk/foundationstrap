@@ -36,13 +36,17 @@
 	.no-border-radius;
 }
 
+.nav-tabs > li > a, .nav-tabs > li > a {
+	border-top: 3px solid transparent;
+}
+
 .nav-tabs > li.active > a, .nav-tabs > li.active:hover > a {
 	border-top: 3px solid #488dc8;
 }
 
-.nav-tabs > li > a:hover {
-	background: 0 none;
-	border: 1px solid transparent;
+.nav-tabs.nav-stacked > li.active > a, .nav-tabs.nav-stacked > li.active:hover > a {
+	border-top: 1px solid #ddd;
+	border-left: 3px solid #488dc8;
 }
 
 .nav-tabs.nav-stacked > li:first-child > a,
