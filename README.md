@@ -1,3 +1,3 @@
 # Foundationstrap
 
-Please see the [docs](http://responsiv.github.com/foundationstrap-docs/).
+Please see the [docs](http://responsiv.github.io/foundationstrap/docs/).
