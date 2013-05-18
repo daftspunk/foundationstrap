@@ -1,8 +1,4 @@
 //
-// Variables
-// --------------------------------------------------
-
-
 // Global values
 // --------------------------------------------------
 
@@ -48,8 +44,8 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Segoe UI", "Open Sans", sans-serif;
-@serifFontFamily:       "Open Sans", Arial, Helvetica, sans-serif;
+@sansFontFamily:        "OpenSans", sans-serif;
+@serifFontFamily:       "OpenSans", sans-serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
@@ -57,8 +53,8 @@
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    "Open Sans",Arial,Helvetica,Sans-Serif;
-@headingsFontWeight:    300; // instead of browser default, bold
+@headingsFontFamily:    inherit;
+@headingsFontWeight:    normal; // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -155,10 +151,15 @@
 @zindexNotification:      1060;
 
 
+// General path
+// -------------------------
+@imagesPath:              "../../../extras/foundationstrap/images";
+@fontsPath:               "../../../extras/foundationstrap/fonts";
+
 // Sprite icons path
 // -------------------------
-@iconSpritePath:          "../img/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+@iconSpritePath:          "../../../extras/foundationstrap/bootstrap/img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../../../extras/foundationstrap/bootstrap/img/glyphicons-halflings-white.png";
 
 
 // Input placeholder text color
