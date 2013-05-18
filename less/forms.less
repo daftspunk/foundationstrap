@@ -15,7 +15,6 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input,
-
 .input-append input,
 .input-prepend input,
 .input-append select,
@@ -49,5 +48,29 @@ input.search-query,
 }
 
 .form-actions {
-  padding: 12px 20px 12px;
+	padding: 12px 20px 12px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border-top: 1px solid darken(@inputBorder, 15%);
+	&:focus {
+		.box-shadow(~"inset 0 1px 1px rgba(0,0,0,.2)");
+		border: 1px solid darken(@inputBorder, 15%);
+		background-color: darken(@inputBackground, 2%);
+	}
 }
