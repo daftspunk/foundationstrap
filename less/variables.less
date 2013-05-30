@@ -5,25 +5,25 @@
 
 // Grays
 // -------------------------
-@black:                 #000;
-@grayDarker:            #222;
-@grayDark:              #333;
-@gray:                  #555;
-@grayLight:             #999;
-@grayLighter:           #eee;
-@white:                 #fff;
+@black:                 rgb(0,0,0);
+@grayDarker:            lighten(@black, 10%);
+@grayDark:              lighten(@black, 25%);
+@gray:                  lighten(@black, 50%);
+@grayLight:             lighten(@black, 75%);
+@grayLighter:           lighten(@black, 90%);
+@white:                 rgb(255,255,255);
 
 
 // Accent colors
 // -------------------------
-@blue:                  #2E8BCC;
+@blue:                  #1b88ce;
 @blueDark:              darken(@blue, 15%);
-@green:                 #339933;
-@red:                   #E51400;
+@green:                 #81b31b;
+@red:                   #c30a0a;
 @yellow:                #ffc40d;
-@orange:                #F09609;
-@pink:                  #E671B8;
-@purple:                #7B4F9D;
+@orange:                #f2990d;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
 
 @lime:                  #8CBF26;
 @magenta:               #FF0097;
@@ -38,13 +38,13 @@
 
 // Links
 // -------------------------
-@linkColor:             @blue;
-@linkColorHover:        @blueDark;
+@linkColor:             lighten(@primaryColor, 7%);
+@linkColorHover:        darken(@primaryColor, 7%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        sans-serif;
 @serifFontFamily:       "OpenSans", serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -82,31 +82,6 @@
 @tableBackgroundHover:              #f5f5f5; // for hover
 @tableBorderHover:                  #00bff2;
 @tableBorder:                       #ccc; // table and cell border
-
-// Buttons
-// -------------------------
-@btnBackground:                  @grayLighter;
-@btnBackgroundHighlight:         @grayLighter;
-@btnBorder:                      #ccc;
-
-@btnPrimaryBackground:           @linkColor;
-@btnPrimaryBackgroundHighlight:  spin(@btnPrimaryBackground, 15%);
-
-@btnInfoBackground:              #5bc0de;
-@btnInfoBackgroundHighlight:     #2f96b4;
-
-@btnSuccessBackground:           #62c462;
-@btnSuccessBackgroundHighlight:  #51a351;
-
-@btnWarningBackground:           lighten(@orange, 15%);
-@btnWarningBackgroundHighlight:  @orange;
-
-@btnDangerBackground:            #ee5f5b;
-@btnDangerBackgroundHighlight:   #bd362f;
-
-@btnInverseBackground:           @gray;
-@btnInverseBackgroundHighlight:  @grayDarker;
-
 
 // Forms
 // -------------------------
@@ -150,11 +125,6 @@
 @zindexModal:             1050;
 @zindexNotification:      1060;
 
-
-// General path
-// -------------------------
-@imagesPath:              "../../../extras/foundationstrap/images";
-@fontsPath:               "../../../extras/foundationstrap/fonts";
 
 // Sprite icons path
 // -------------------------
@@ -237,7 +207,7 @@
 
 // Form states and alerts
 // -------------------------
-@warningBackground:       #2ba6cb;
+@warningBackground:       #ff9c00;
 @warningText:             darken(#2ba6cb, 5%);
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
@@ -245,22 +215,45 @@
 @errorText:               darken(@errorBackground, 5%);
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
-@successBackground:       #6ec229;
+@successBackground:       #81b31b;
 @successText:             darken(@successBackground, 5%);
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoBackground:          #c2c60c;
+@infoBackground:          #1b88ce;
 @infoText:                darken(@infoBackground, 5%);
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
-@importantBackground:     #c2c60c;
-@importantText:           darken(@importantBackground, 5%);
-@importantBorder:         darken(spin(@importantBackground, -10), 7%);
-
-@inverseBackground:       #ccc;
-@inverseText:             #000;
+@inverseBackground:       darken(@gray, 5%);
+@inverseText:             #fff;
 @inverseBorder:           darken(spin(@inverseBackground, -10), 7%);
 
+
+// Buttons
+// -------------------------
+@btnBorder:                      #ccc;
+@btnFont:                        @serifFontFamily;
+@btnWeight:                      bold;
+
+@btnBackground:                  lighten(@secondaryColor, 5%);
+@btnBackgroundHighlight:         darken(@secondaryColor, 5%);
+
+@btnPrimaryBackground:           lighten(@primaryColor, 5%);
+@btnPrimaryBackgroundHighlight:  darken(@primaryColor, 5%);
+
+@btnInfoBackground:              lighten(@infoBackground, 5%);
+@btnInfoBackgroundHighlight:     darken(@infoBackground, 5%);
+
+@btnSuccessBackground:           lighten(@successBackground, 5%);
+@btnSuccessBackgroundHighlight:  darken(@successBackground, 5%);
+
+@btnWarningBackground:           lighten(@warningBackground, 5%);
+@btnWarningBackgroundHighlight:  darken(@warningBackground, 5%);
+
+@btnDangerBackground:            lighten(@errorBackground, 5%);
+@btnDangerBackgroundHighlight:   darken(@errorBackground, 5%);
+
+@btnInverseBackground:           @inverseBackground;
+@btnInverseBackgroundHighlight:  darken(@inverseBackground, 10%);
 
 // Tooltips and popovers
 // -------------------------

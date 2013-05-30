@@ -9,9 +9,10 @@
 // Only give color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
 .label,
 .badge {
-	background-color: #e9e9e9;
+	background-color: @secondaryColor;
 	color: #505050;
-	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5);
+
+	text-shadow: 0 0 1px rgba(0,0,0,.25);
 	font-weight: normal;
 
 	&[href] { color: darken(@white, 10%); }
@@ -22,25 +23,25 @@
 	// Important (red)
 	&-important { 
 		color: #fff;
-		background-color: @importantBackground;
-		border-color: darken(@importantBackground, 10%); 
+		background-color: @errorBackground;
+		border-color: darken(@errorBackground, 10%); 
 	}
 
 	&-important[href] { 
 		color: #fff;
-		background-color: darken(@importantBackground, 10%);
-		border-color: darken(@importantBackground, 20%); 
+		background-color: darken(@errorBackground, 10%);
+		border-color: darken(@errorBackground, 20%); 
 	}
 	// Warnings (orange)
 	&-warning { 
 		color: #fff;
-		background-color: @errorBackground;
-		border-color: darken(@errorBackground, 10%); 
+		background-color: @warningBackground;
+		border-color: darken(@warningBackground, 10%); 
 	}
 	&-warning[href] { 
 		color: #fff;
-		background-color: darken(@errorBackground, 10%);
-		border-color: darken(@errorBackground, 20%); 
+		background-color: darken(@warningBackground, 10%);
+		border-color: darken(@warningBackground, 20%); 
 	}
 	// Success (green)
 	&-success { 
@@ -69,7 +70,6 @@
 		color: #fff;
 		background-color: @inverseBackground;
 		border-color: darken(@inverseBackground, 10%); 
-		text-shadow: 0 0 1px #fff;
 	}
 	&-inverse[href] { 
 		color: #fff;
@@ -136,18 +136,22 @@
 	// Important (red)
 	&-important { color: @errorBackground; border-color: @errorBackground; }
 	&-important[href] { color: darken(@errorBackground, 10%); border-color: darken(@errorBackground, 10%); }
+
 	// Warnings (orange)
-	&-warning { color: @orange; border-color: @orange; }
-	&-warning[href] { color: darken(@orange, 10%); border-color: darken(@orange, 10%); }
+	&-warning { color: @warningBackground; border-color: @warningBackground; }
+	&-warning[href] { color: darken(@warningBackground, 10%); border-color: darken(@warningBackground, 10%); }
+	
 	// Success (green)
 	&-success { color: @successBackground; border-color: @successBackground; }
 	&-success[href] { color: darken(@successBackground, 10%); border-color: darken(@successBackground, 10%); }
+	
 	// Info (turquoise)
 	&-info { color: @infoBackground; border-color: @infoBackground; }
 	&-info[href] { color: darken(@infoBackground, 10%); border-color: darken(@infoBackground, 10%); }
+	
 	// Inverse (black)
-	&-inverse { color: @grayDark; border-color: @grayDark; }
-	&-inverse[href] { color: darken(@grayDark, 10%); border-color: darken(@grayDark, 10%); }
+	&-inverse { color: @inverseBackground; border-color: @inverseBackground; }
+	&-inverse[href] { color: darken(@inverseBackground, 10%); border-color: darken(@inverseBackground, 10%); }
 }
 
 label.required:after {
