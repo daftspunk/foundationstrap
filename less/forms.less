@@ -74,3 +74,14 @@ input[type="color"],
 		background-color: darken(@inputBackground, 2%);
 	}
 }
+
+.control-group.warning,
+.control-group.error,
+.control-group.success,
+.control-group.info {
+	.input-prepend .add-on,
+	.input-append .add-on {
+		color: @white;
+		.text-shadow(none);
+	}
+}
